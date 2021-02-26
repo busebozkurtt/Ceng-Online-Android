@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/resim1"
+    tools:context=".ReadMessageActivity">
+
+    <EditText
+        android:id="@+id/fromMail"
+        android:layout_width="242dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
+        android:background="#11DA8B8B"
+        android:drawableLeft="@mipmap/ic_launcher_mailll"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F9FBE7"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAnswer"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="ANSWER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#35597C"
+        android:textColor="#FFFDE7"
+        android:textSize="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <Button
+        android:id="@+id/course"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/book"
+        app:layout_constraintBottom_toTopOf="@+id/fromMail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/logout"
+        app:layout_constraintBottom_toTopOf="@+id/fromMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/message_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="296dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="32dp"
+        android:background="#11DA8B8B"
+        android:gravity="top|left"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <Button
+        android:id="@+id/message_button"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@drawable/mail"
+        app:layout_constraintStart_toEndOf="@+id/course"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="298dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="216dp"
+        android:background="#11DA8B8B"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/message_button" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#35597C"
+        android:textColor="#FFFDE7"
+        android:textSize="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#01579B"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/logOut"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_number"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

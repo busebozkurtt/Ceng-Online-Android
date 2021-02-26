@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/resim1"
+    tools:context=".AddUpdateHomeworkActivity">
+
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/message"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/mail"
+        app:layout_constraintStart_toEndOf="@+id/course"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/course"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:background="@drawable/book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:background="#25850D0D"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="153dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="148dp"
+        android:background="#16850D0D"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFDE7"
+        android:textSize="16dp"
+        android:background="#35597C"
+        android:text="time select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <Button
+        android:id="@+id/date_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Date select"
+        android:textColor="#FFFDE7"
+        android:textSize="16dp"
+        android:background="#35597C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="269dp"
+        android:layout_height="35dp"
+        android:background="#11DA8B8B"
+        android:text="Due Date"
+        android:textColor="#FFFDE7"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <EditText
+        android:id="@+id/explain_hw"
+        android:layout_width="408dp"
+        android:layout_height="323dp"
+        android:background="#D69D9D"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/add_hw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_hw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Add Homework"
+        android:textSize="16dp"
+        android:textColor="#FFFDE7"
+        android:background="#35597C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/back_page"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#01579B"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/logOut"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message_number"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
