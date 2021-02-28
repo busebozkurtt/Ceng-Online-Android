@@ -1,4 +1,4 @@
-# Ceng-Online
+# Ceng-Online-Android
 
 During the pandemic period, many activities had to continue online. This application is an android program developed for students to access the lessons live and participate in the studies online during the pandemic.
 
