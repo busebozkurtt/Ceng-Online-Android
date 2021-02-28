@@ -23,7 +23,6 @@ This application has been developed with Android Studio.
 
 SQLite is used as a database in this application.
 > https://sqlitebrowser.org/dl/
-## Usage
 
 
 ## LICENSE
